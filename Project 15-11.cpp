@@ -2,6 +2,23 @@
 #include <string>
 using namespace std;
 
+bool isInterval(int array[])
+{
+	for (int i = 0; i < 2; i++)
+	{
+		int* ptr = &array[i];
+		if (*ptr >= 1 || *ptr > 7 || *ptr < 1 || *ptr > 7 || *ptr == 0)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+
+	}
+}
+
 int main()
 {
 	string* ptr[2];//Declaring array of pointers, which type is string
@@ -23,12 +40,23 @@ int main()
 	}
 	if (sum == 7)
 	{
-		cout << "Everything is OK";
+		cout << "Everything is OK" << endl;
 	}
-	else
+	else if (sum != 7)
 	{
-		cout << "Sum of the days should be equal to 7";
+		if (isInterval(arr) == false)
+		{
+			cout << "Numbers should be between 1 and 7" << endl;
+			cout << "Run the program again and type new numbers" << endl;
+		}
+		else
+		{
+			cout << "Sum of the days should be equal to 7" << endl;
+			cout << "Run the program again and type new days" << endl;
+		}
+
 	}
+
 }
 
 
