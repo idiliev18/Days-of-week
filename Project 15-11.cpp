@@ -62,6 +62,13 @@ int main()
 
 	}
 
+	//problem 3
+
+	ptr[0] = daysOfWeek + 4;//First pointer point to the fifth ellement of the array of strings
+	ptr[1] = ptr[0] + 1;//Second pointer points to the sixth element of the array of string
+
+
+
 }
 
 
