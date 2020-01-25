@@ -58,6 +58,7 @@ int main()
 		{
 			cout << "Sum of the days should be equal to 7" << endl;//show the mistake
 			cout << "Run the program again and type new days" << endl;//tell to type new numbers
+			cout << endl;//add extra line
 		}
 
 	}
@@ -67,6 +68,13 @@ int main()
 	ptr[0] = daysOfWeek + 4;//First pointer point to the fifth ellement of the array of strings
 	ptr[1] = ptr[0] + 1;//Second pointer points to the sixth element of the array of string
 
+	//problem 4
+
+	cout << "The last work day: " << *ptr[0] << endl;//print last work day
+	cout << "The address of ptr[0]: " << ptr[0] << endl;//print address of ptr[0]
+	cout << endl;//add extra line
+	cout << "The first day day: " << *ptr[1] << endl;//print first rest day
+	cout << "The address of ptr[1]: " << ptr[1] << endl;//print address of ptr[1]
 
 
 }
